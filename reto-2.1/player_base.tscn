@@ -1,0 +1,18 @@
+[gd_scene format=3]
+
+[ext_resource type="Texture2D" path="res://assets/player.webp" id="1_d4awt"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_body"]
+size = Vector2(51, 142)
+
+[node name="PlayerBase" type="CharacterBody2D" unique_id=579350665]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1976219383]
+texture_filter = 1
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_d4awt")
+region_enabled = true
+region_rect = Rect2(208, 37, 102, 285)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1449118779]
+shape = SubResource("RectangleShape2D_body")
